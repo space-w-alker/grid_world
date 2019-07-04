@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{02B34F1C-618A-4C96-8E04-BEC505132F08}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GridWorld/Grid.cs">
+    <Files>
+      <File FileName="GridWorld/Program.cs" Line="12" Column="1" />
+      <File FileName="GridWorld/Grid.cs" Line="147" Column="53" />
+      <File FileName="GridWorld/world.txt" Line="1" Column="5" />
+      <File FileName="GridWorld/ValueIteration.cs" Line="38" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GridWorld" expanded="True">
+            <Node name="GridWorld" expanded="True">
+              <Node name="Grid.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GridWorld PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../GridWorld/Grid.cs" line="9" offsetX="341" offsetY="152" expression="height" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,7 @@
+/home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.csprojAssemblyReference.cache
+/home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.csproj.CoreCompileInputs.cache
+/home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/GridWorld.exe
+/home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/GridWorld.pdb
+/home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.exe
+/home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.pdb
+/home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/world.txt
