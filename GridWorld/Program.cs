@@ -6,8 +6,7 @@ namespace GridWorld
     {
         public static void Main(string[] args)
         {
-            Grid grid = new Grid("world.txt");
-            Console.WriteLine(grid);
+            Grid grid = new Grid("world3.txt");
             Console.WriteLine(grid.PrintValueFunction(ValueIteration.EvaluateUniformRandomPolicy(grid)));
             Console.WriteLine("Hello World!");
         }

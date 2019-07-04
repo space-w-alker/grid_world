@@ -17,6 +17,7 @@ namespace GridWorld
         public int Height { get { return height; } }
         public Cell CurrentCell { get { return currentCell; } }
         public int[] Pos { get { return currentPosition; } }
+        public int[] StartPos { get; }
 
         public enum ACTION { UP,DOWN,RIGHT,LEFT}
 
@@ -35,8 +36,9 @@ namespace GridWorld
                 height = int.Parse(topLine[0].ToString());
                 grid = new Cell[height, width];
                 currentPosition = new int[2];
-                currentPosition[0] = int.Parse(topLine[2].ToString());
-                currentPosition[1] = int.Parse(topLine[3].ToString());
+                StartPos = new int[] { int.Parse(topLine[2].ToString()), int.Parse(topLine[3].ToString()) };
+                //StartPos[0] = int.Parse(topLine[2].ToString());
+                //StartPos[1] = int.Parse(topLine[3].ToString());
                 
                 for(int i =0; i < height; i++)
                 {
@@ -44,7 +46,7 @@ namespace GridWorld
 
                     for(int j=0; j < width; j++)
                     {
-                        grid[i, j] = new Cell(line[j]);
+                        grid[i, j] = new Cell(line[j], Cost:-0.1f);
                     }
                 }
                 GenerateActions();
@@ -135,7 +137,7 @@ namespace GridWorld
             return builder.ToString();
         }
 
-        public string PrintValueFunction(Dictionary<string,float> V)
+        public string PrintValueFunction(Dictionary<string,float> V, bool showCells=true)
         {
             StringBuilder builder = new StringBuilder();
             for (int i = 0; i < height; i++)
@@ -144,7 +146,15 @@ namespace GridWorld
                 builder.Append("|");
                 for (int j = 0; j < width; j++)
                 {
-                    builder.Append(String.Format("{0}|", V[String.Format("{0}{1}", i, j)]));
+                    if(showCells && (grid[i,j].CellType.Equals(Cell.Cell_Type.WALL) || grid[i, j].IsTerminal))
+                    {
+                        builder.Append(String.Format("{0,-6}|", grid[i,j].CellType));
+                    }
+                    else
+                    {
+                        builder.Append(String.Format("{0,-6:##.###}|", V[String.Format("{0}{1}", i, j)]));
+                    }
+
                 }
                 builder.Append("\n");
             }

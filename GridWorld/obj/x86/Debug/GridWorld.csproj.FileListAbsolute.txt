@@ -5,3 +5,5 @@
 /home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.exe
 /home/spacewalker/Projects/GridWorld/GridWorld/obj/x86/Debug/GridWorld.pdb
 /home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/world.txt
+/home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/world2.txt
+/home/spacewalker/Projects/GridWorld/GridWorld/bin/Debug/world3.txt
